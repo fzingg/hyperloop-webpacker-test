@@ -1,0 +1,12 @@
+{
+  "name": "hyperloop-rails-tudomvc",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "3.5",
+    "react": "15.6.2",
+    "react-dom": "15.6.2"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "2.11.2"
+  }
+}
