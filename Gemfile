@@ -36,8 +36,14 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
-gem 'hyperloop', '~>1.0.0.lap0'
-gem 'hyper-router'
+gem 'hyperloop', git: 'https://github.com/ruby-hyperloop/hyperloop.git', branch: 'edge'
+gem 'hyperloop-config', git: 'https://github.com/ruby-hyperloop/hyperloop-config.git', branch: 'edge'
+gem 'hyper-react', git: 'https://github.com/ruby-hyperloop/hyper-react.git', branch: 'edge'
+gem 'hyper-operation', git: 'https://github.com/ruby-hyperloop/hyper-operation.git', branch: 'edge'
+gem 'hyper-mesh', git: 'https://github.com/ruby-hyperloop/hyper-mesh.git', branch: 'edge'
+
+
+gem 'hyper-router', git: 'https://github.com/ruby-hyperloop/hyper-router.git', branch: 'edge'
 gem 'opal-jquery', git: 'https://github.com/opal/opal-jquery.git', branch: 'master'
 
 

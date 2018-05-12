@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/fkchang/opal-hot-reloader.git
-  revision: 6cca37317ee8ca6bbb4d4433bf9964898066c520
+  revision: 7661b2152883947abd639103bba338ca75b28168
   specs:
-    opal_hot_reloader (0.1.5)
+    opal_hot_reloader (0.1.6)
       listen (~> 3.0)
       websocket
 
@@ -13,6 +13,75 @@ GIT
   specs:
     opal-jquery (0.4.2)
       opal (>= 0.10.0, < 0.12.0)
+
+GIT
+  remote: https://github.com/ruby-hyperloop/hyper-mesh.git
+  revision: 3df1ee0b3649d36721aec2b48f83a1000db2ff34
+  branch: edge
+  specs:
+    hyper-mesh (1.0.0.lap28)
+      activerecord (>= 4.0.0)
+      hyper-component (= 1.0.0.lap28)
+      hyper-operation (= 1.0.0.lap28)
+
+GIT
+  remote: https://github.com/ruby-hyperloop/hyper-operation.git
+  revision: e113e3c0dfed2ced84281a26e0527e70dad91489
+  branch: edge
+  specs:
+    hyper-operation (1.0.0.lap28)
+      activerecord (>= 4.0.0)
+      hyper-component (= 1.0.0.lap28)
+      hyperloop-config (= 1.0.0.lap28)
+      mutations
+      opal-activesupport (~> 0.3.1)
+
+GIT
+  remote: https://github.com/ruby-hyperloop/hyper-react.git
+  revision: 22e2b2fc03bce6d953751fe981cdb495e738c10e
+  branch: edge
+  specs:
+    hyper-react (1.0.0.lap28)
+      hyper-store (= 1.0.0.lap28)
+      hyperloop-config (= 1.0.0.lap28)
+      mini_racer (~> 0.1.15)
+      opal (>= 0.11.0, < 0.12.0)
+      opal-activesupport (~> 0.3.1)
+      react-rails (>= 2.4.0, < 2.5.0)
+
+GIT
+  remote: https://github.com/ruby-hyperloop/hyper-router.git
+  revision: 860491e26b0b5b5b8dfce8b9adad00986f817927
+  branch: edge
+  specs:
+    hyper-router (4.2.6.lap28)
+      hyper-component (= 1.0.0.lap28)
+      hyper-react (= 1.0.0.lap28)
+      opal-browser (~> 0.2.0)
+      opal-rails (~> 0.9.4)
+      react-rails (>= 2.4.0, < 2.5.0)
+
+GIT
+  remote: https://github.com/ruby-hyperloop/hyperloop-config.git
+  revision: 8fd1b5f4779cf9f53ecfd2076273a7df70ff162e
+  branch: edge
+  specs:
+    hyperloop-config (1.0.0.lap28)
+      opal (>= 0.11.0, < 0.12.0)
+      opal-browser (~> 0.2.0)
+      uglifier
+
+GIT
+  remote: https://github.com/ruby-hyperloop/hyperloop.git
+  revision: 57d30ff98c80c8a60b4526691113275335547be1
+  branch: edge
+  specs:
+    hyperloop (1.0.0.lap28)
+      hyperloop-config (= 1.0.0.lap28)
+      mini_racer (~> 0.1.15)
+      opal-browser (~> 0.2.0)
+      rails (>= 4.0.0)
+      react-rails (>= 2.4.0, < 2.5.0)
 
 GEM
   remote: https://rubygems.org/
@@ -73,7 +142,7 @@ GEM
       msgpack (~> 1.0)
     builder (3.2.3)
     byebug (10.0.2)
-    capybara (3.0.3)
+    capybara (3.1.0)
       addressable
       mini_mime (>= 0.1.3)
       nokogiri (~> 1.8)
@@ -109,47 +178,9 @@ GEM
       hyperloop-config (= 1.0.0.lap28)
       opal-rails (~> 0.9.4)
       react-rails (>= 2.4.0, < 2.5.0)
-    hyper-mesh (1.0.0.lap28)
-      activerecord (>= 4.0.0)
-      hyper-component (= 1.0.0.lap28)
-      hyper-operation (= 1.0.0.lap28)
-    hyper-model (1.0.0.lap28)
-      hyper-mesh (= 1.0.0.lap28)
-    hyper-operation (1.0.0.lap28)
-      activerecord (>= 4.0.0)
-      hyper-component (= 1.0.0.lap28)
-      hyperloop-config (= 1.0.0.lap28)
-      mutations
-      opal-activesupport (~> 0.3.1)
-    hyper-react (1.0.0.lap28)
-      hyper-store (= 1.0.0.lap28)
-      hyperloop-config (= 1.0.0.lap28)
-      mini_racer (~> 0.1.15)
-      opal (>= 0.11.0, < 0.12.0)
-      opal-activesupport (~> 0.3.1)
-      react-rails (>= 2.4.0, < 2.5.0)
-    hyper-router (4.2.6.lap28)
-      hyper-component (= 1.0.0.lap28)
-      hyper-react (= 1.0.0.lap28)
-      opal-browser (~> 0.2.0)
-      opal-rails (~> 0.9.4)
-      react-rails (>= 2.4.0, < 2.5.0)
     hyper-store (1.0.0.lap28)
       hyperloop-config (= 1.0.0.lap28)
       opal (>= 0.11.0, < 0.12.0)
-    hyperloop (1.0.0.lap28)
-      hyper-model (= 1.0.0.lap28)
-      hyper-router (= 4.2.6.lap28)
-      hyperloop-config (= 1.0.0.lap28)
-      mini_racer (~> 0.1.15)
-      opal-browser (~> 0.2.0)
-      opal-rails (~> 0.9.4)
-      rails (>= 4.0.0)
-      react-rails (>= 2.4.0, < 2.5.0)
-    hyperloop-config (1.0.0.lap28)
-      opal (>= 0.11.0, < 0.12.0)
-      opal-browser (~> 0.2.0)
-      uglifier
     i18n (1.0.1)
       concurrent-ruby (~> 1.0)
     io-like (0.3.0)
@@ -266,7 +297,7 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
-    selenium-webdriver (3.11.0)
+    selenium-webdriver (3.12.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.2)
     sourcemap (0.1.1)
@@ -318,8 +349,12 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   foreman
-  hyper-router
-  hyperloop (~> 1.0.0.lap0)
+  hyper-mesh!
+  hyper-operation!
+  hyper-react!
+  hyper-router!
+  hyperloop!
+  hyperloop-config!
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   opal-jquery!

@@ -16,4 +16,4 @@
 //= require_tree .
 //= require hyperloop-loader
 
-Opal.OpalHotReloader.$listen(25222, false, 1);
+//Opal.OpalHotReloader.$listen(25222, false, 1);

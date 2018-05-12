@@ -34,9 +34,12 @@
 
 Hyperloop.configuration do |config|
   config.transport = :action_cable
-  config.import 'reactrb/auto-import'
-  config.import 'opal_hot_reloader'
-  config.cancel_import 'react'
+  config.import Webpacker.manifest.lookup("client_only.js").split("/").last, client_only: true
   config.import Webpacker.manifest.lookup("client_and_server.js").split("/").last
-
+  config.import 'reactrb/auto-import'
+  #config.import 'opal_hot_reloader'
+  config.cancel_import 'react/react-source-browser'
+  config.cancel_import 'react/react-source-server'
+  config.cancel_import 'hyper-router/react-router-source'
+  config.cancel_import 'react_ujs'
 end
